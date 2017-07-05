@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/auth_background"
+    android:padding="20dp"
+    tools:context="com.sweta.grievancemakers.authfragments.RegisterFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textColor="#b7afaf"
+        android:textAlignment="center"
+        android:id="@+id/sign_up"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Location"
+        android:inputType="textPersonName"
+        android:background="@drawable/edittext_transparent"
+        android:layout_marginTop="10dp"
+        android:id="@+id/location"
+        android:textColor="@color/colorGrey"
+        android:textColorHint="@color/colorGrey"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email id"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/edittext_transparent"
+        android:layout_marginTop="10dp"
+        android:id="@+id/email"
+        android:textColor="@color/colorGrey"
+        android:textColorHint="@color/colorGrey"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mobile number"
+        android:inputType="number"
+        android:background="@drawable/edittext_transparent"
+        android:layout_marginTop="10dp"
+        android:id="@+id/number"
+        android:textColor="@color/colorGrey"
+        android:textColorHint="@color/colorGrey"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Gender"
+        android:background="@drawable/edittext_transparent"
+        android:layout_marginTop="10dp"
+        android:id="@+id/gender"
+        android:textColor="@color/colorGrey"
+        android:textColorHint="@color/colorGrey"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date of birth"
+        android:background="@drawable/edittext_transparent"
+        android:layout_marginTop="10dp"
+        android:inputType="date"
+        android:id="@+id/date_of_birth"
+        android:textColor="@color/colorGrey"
+        android:textColorHint="@color/colorGrey"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:inputType="text"
+        android:background="@drawable/edittext_transparent"
+        android:layout_marginTop="10dp"
+        android:id="@+id/username"
+        android:textColor="@color/colorGrey"
+        android:textColorHint="@color/colorGrey"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:background="@drawable/edittext_transparent"
+        android:layout_marginTop="10dp"
+        android:id="@id/password"
+        android:textColor="@color/colorGrey"
+        android:textColorHint="@color/colorGrey"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background"
+        android:layout_marginTop="10dp"
+        android:text="Submit"
+        android:id="@+id/submit"
+        android:textColor="@color/colorGrey"
+        />
+
+
+</LinearLayout>

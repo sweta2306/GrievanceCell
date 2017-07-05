@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sweta.grievancemakers.Pages.ChatActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:id="@+id/toolbar"
+        android:background="@color/toolbar_color"
+        app:titleTextColor="@color/white"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/chaticon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_popcorn"
+            android:layout_alignParentBottom="true" >
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chats"
+            android:textSize="20dp"
+            android:padding="5dp"
+            android:textColor="@color/white"/>
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_chat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/lightGrey"
+        android:layout_above="@+id/senderContainer"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:id="@+id/senderContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="4dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:paddingTop="4dp"
+        android:background="@color/lightGrey"
+        android:weightSum="1"
+        >
+        <EditText
+            android:layout_weight="0.99"
+            android:id="@+id/edit_text_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="#555555"
+            android:textSize="14sp"
+            android:hint="Type your message"
+            android:textColorHint="@color/lightGrey"
+            android:background="@drawable/edittext_background"
+            android:layout_marginLeft="5dp"
+            android:padding="15dp"
+            android:layout_gravity="center"
+            />
+
+        <ImageButton
+            android:layout_weight="0.01"
+            android:id="@+id/btn_send_message"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:textColor="#FFFFFF"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_send"
+            android:background="@drawable/send_button_background"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+
+
+
+</RelativeLayout>
